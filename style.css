@@ -18,9 +18,11 @@ line-height:1.6;
 
 /* HEADER */
 
-.header
+/* HEADER */
+
+.site-header
 {
-background:#ffffff;
+background:white;
 border-bottom:1px solid #e5e7eb;
 position:sticky;
 top:0;
@@ -37,7 +39,9 @@ justify-content:space-between;
 padding:10px 15px;
 }
 
-.logo-school
+/* LOGO AREA */
+
+.logo-section
 {
 display:flex;
 align-items:center;
@@ -46,63 +50,76 @@ gap:12px;
 
 .logo
 {
-height:50px;
+width:55px;
+height:55px;
+object-fit:contain;
 }
 
-.school-title h1
+/* SCHOOL TEXT */
+
+.school-info h1
 {
-font-size:22px;
+font-size:24px;
+margin:0;
 color:#1E40AF;
-margin-bottom:2px;
 }
 
-.location
+.school-info span
 {
 font-size:13px;
-color:#444;
+display:block;
+margin:2px 0;
+color:#333;
 }
 
-.codes
+.school-info p
 {
 font-size:11px;
-color:#777;
+color:#666;
 }
-
 
 /* MENU */
 
-.main-menu
+.menu
 {
 display:flex;
 gap:22px;
 }
 
-.main-menu a
+.menu a
 {
 text-decoration:none;
-font-size:14px;
 color:#1E40AF;
 font-weight:500;
+font-size:15px;
 position:relative;
 }
 
-.main-menu a::after
+/* HOVER ANIMATION */
+
+.menu a::after
 {
 content:"";
 position:absolute;
 left:0;
-bottom:-4px;
+bottom:-5px;
 width:0;
 height:2px;
 background:#2563EB;
 transition:0.3s;
 }
 
-.main-menu a:hover::after
+.menu a:hover::after
 {
 width:100%;
 }
 
+/* ACTIVE PAGE */
+
+.menu .active
+{
+font-weight:700;
+}
 
 /* HERO */
 
@@ -441,3 +458,4 @@ height:170px;
 }
 
 }
+
