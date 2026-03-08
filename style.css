@@ -3,6 +3,12 @@ body
 font-family: Arial;
 margin:0;
 }
+.logo-area
+{
+display:flex;
+align-items:center;
+gap:12px;
+}
 .logo-area img
 {
 height:60px;
@@ -78,6 +84,7 @@ color:white;
 padding:20px;
 text-align:center;
 }
+
 
 
 
