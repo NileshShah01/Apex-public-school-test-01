@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-const counters = document.querySelectorAll('.counter');
+const counters = document.querySelectorAll(".counter");
 
 counters.forEach(counter => {
 
@@ -9,14 +9,18 @@ counter.innerText = "0";
 const target = Number(counter.getAttribute("data-target"));
 let count = 0;
 
+const speed = 120;
+
 const updateCounter = () => {
 
-count = count + Math.ceil(target / 60);
+const increment = target / speed;
+
+count = count + increment;
 
 if(count < target)
 {
-counter.innerText = count;
-setTimeout(updateCounter,30);
+counter.innerText = Math.ceil(count);
+setTimeout(updateCounter,40);
 }
 else
 {
