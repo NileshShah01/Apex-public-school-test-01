@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,15 +10,177 @@
 
 <link rel="stylesheet" href="style.css">
 
+<style>
+
+/* INTERACTIVE BACKGROUND */
+
+#bg
+{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:linear-gradient(135deg,#e8f0ff,#ffffff);
+}
+
+/* HERO */
+
+.contact-hero
+{
+text-align:center;
+padding:70px 20px;
+}
+
+.contact-hero h1
+{
+font-size:38px;
+color:#1E40AF;
+}
+
+/* CONTACT CARDS */
+
+.contact-cards
+{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:30px 20px;
+}
+
+.card
+{
+background:white;
+padding:25px;
+border-radius:6px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover
+{
+transform:translateY(-10px);
+}
+
+/* FORM */
+
+.form-section
+{
+max-width:600px;
+margin:auto;
+padding:40px 20px;
+}
+
+.form-section input,
+.form-section textarea,
+.form-section select
+{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ddd;
+}
+
+.submit-btn
+{
+padding:12px 20px;
+background:#1E40AF;
+color:white;
+border:none;
+cursor:pointer;
+transition:0.3s;
+}
+
+.submit-btn:hover
+{
+background:#0f2c7a;
+}
+
+/* SOCIAL ICONS */
+
+.social
+{
+text-align:center;
+padding:30px;
+}
+
+.social img
+{
+width:40px;
+margin:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.social img:hover
+{
+transform:scale(1.2);
+}
+
+/* MAP */
+
+.map
+{
+padding:40px 20px;
+text-align:center;
+}
+
+/* OFFICE HOURS */
+
+.hours
+{
+text-align:center;
+padding:30px;
+background:#f4f7ff;
+}
+
+/* FAQ */
+
+.faq
+{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.faq-item
+{
+margin-bottom:20px;
+cursor:pointer;
+}
+
+.faq-answer
+{
+display:none;
+padding:10px;
+background:#f7f7f7;
+}
+
+/* FOOTER */
+
+.footer
+{
+background:#0a2a66;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header class="header">
+<canvas id="bg"></canvas>
 
-<div class="header-container">
+<header>
 
-<div class="logo-school">
+<div class="header-top">
 
 <img src="images/ApexPublicSchoolLogo.png" class="logo">
 
@@ -29,7 +192,7 @@
 
 </div>
 
-<nav class="main-menu">
+<nav>
 
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
@@ -41,77 +204,106 @@
 
 </nav>
 
-</div>
-
 </header>
 
 
-<section class="page-header">
+<section class="contact-hero">
 
-<h1>Contact Us</h1>
-<p>We are here to help you</p>
+<h1>Contact Apex Public School</h1>
 
-</section>
-
-
-<section class="about-section">
-
-<h2>School Address</h2>
-
-<p>
-Apex Public School<br>
-Anjani Bazar, Near SBI Anjani Branch<br>
-Parsa, Saran, Bihar<br>
-Pincode 841219
-</p>
+<p>We are happy to help parents and students</p>
 
 </section>
 
 
-<section class="about-section">
+<section class="contact-cards">
 
-<h2>Phone and WhatsApp</h2>
+<div class="card">
 
-<p>
-Mobile: 8084243031<br>
-WhatsApp: 8084243031
-</p>
+<h3>Phone</h3>
+
+<p>8084243031</p>
+
+</div>
+
+<div class="card">
+
+<h3>WhatsApp</h3>
+
+<p><a href="https://wa.me/918084243031">Chat Now</a></p>
+
+</div>
+
+<div class="card">
+
+<h3>Email</h3>
+
+<p>Apexpublicschool61@gmail.com</p>
+
+</div>
+
+<div class="card">
+
+<h3>Address</h3>
+
+<p>Anjani Bazar<br>Near SBI Anjani Branch<br>Parsa Saran</p>
+
+</div>
 
 </section>
 
 
-<section class="about-section">
+<section class="form-section">
 
-<h2>Email Address</h2>
+<h2>Admission Inquiry</h2>
 
-<p>
-Apexpublicschool61@gmail.com
-</p>
+<form>
+
+<input type="text" placeholder="Student Name">
+
+<input type="text" placeholder="Parent Name">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+
+<option>Class Applying For</option>
+<option>Play</option>
+<option>Nursery</option>
+<option>LKG</option>
+<option>UKG</option>
+<option>Class 1</option>
+
+</select>
+
+<textarea placeholder="Message"></textarea>
+
+<button class="submit-btn">Send Inquiry</button>
+
+</form>
 
 </section>
 
 
-<section class="about-section">
+<section class="hours">
 
 <h2>Office Hours</h2>
 
-<p>
-Monday to Saturday<br>
-9:00 AM to 4:00 PM<br>
-Sunday Closed
-</p>
+<p>Monday to Saturday</p>
+
+<p>9 AM to 3 PM</p>
 
 </section>
 
 
-<section class="about-section">
+<section class="map">
 
 <h2>School Location</h2>
 
 <iframe
 src="https://maps.google.com/maps?q=Apex%20Public%20School%20Anjani%20Bazar%20Parsa%20Saran&t=&z=15&ie=UTF8&iwloc=&output=embed"
 width="100%"
-height="400"
+height="350"
 style="border:0;"
 loading="lazy">
 </iframe>
@@ -119,43 +311,115 @@ loading="lazy">
 </section>
 
 
-<section class="about-section">
+<section class="faq">
 
-<h2>Have Questions</h2>
+<h2>Frequently Asked Questions</h2>
 
-<p>
-If you want more information about admissions, facilities or academics, please contact the school office or submit the inquiry form.
-</p>
+<div class="faq-item">
 
-<p>
-<a href="inquiry.html">Submit Inquiry</a>
-</p>
+<h3 onclick="toggleFAQ(this)">When do admissions open?</h3>
+
+<div class="faq-answer">Admissions open for the new session every year.</div>
+
+</div>
+
+<div class="faq-item">
+
+<h3 onclick="toggleFAQ(this)">Which classes are available?</h3>
+
+<div class="faq-answer">Play Group to Class 8.</div>
+
+</div>
 
 </section>
 
 
-<footer>
+<section class="social">
+
+<h2>Follow Us</h2>
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
+
+</section>
+
+
+<footer class="footer">
 
 <p>
 Apex Public School<br>
 Anjani Bazar, Near SBI Anjani Branch<br>
-Parsa, Saran<br>
-Pin 841219
+Parsa, Saran
 </p>
 
 <p>
-Mobile and WhatsApp: 8084243031<br>
-Email: Apexpublicschool61@gmail.com
+Mobile 8084243031<br>
+Email Apexpublicschool61@gmail.com
 </p>
 
 </footer>
 
 
-<a href="https://wa.me/918084243031" class="whatsapp-button" target="_blank">
-WhatsApp
-</a>
+<a href="https://wa.me/918084243031" class="whatsapp-button">WhatsApp</a>
 
-<script src="script.js"></script>
+
+<script>
+
+/* FAQ */
+
+function toggleFAQ(el)
+{
+let ans=el.nextElementSibling
+
+ans.style.display=ans.style.display==="block"?"none":"block"
+}
+
+
+/* INTERACTIVE BACKGROUND */
+
+const canvas=document.getElementById("bg")
+const ctx=canvas.getContext("2d")
+
+canvas.width=window.innerWidth
+canvas.height=window.innerHeight
+
+let particles=[]
+
+for(let i=0;i<80;i++)
+{
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2
+})
+}
+
+function draw()
+{
+
+ctx.clearRect(0,0,canvas.width,canvas.height)
+
+ctx.fillStyle="#1E40AF"
+
+particles.forEach(p=>{
+
+ctx.beginPath()
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2)
+ctx.fill()
+
+})
+
+requestAnimationFrame(draw)
+
+}
+
+draw()
+
+</script>
 
 </body>
+
 </html>
