@@ -60,6 +60,17 @@ color:white;
 text-align:center;
 padding:40px;
 }
+.hero-text h2
+{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text p
+{
+font-size:18px;
+opacity:0.95;
+}
 .notice
 {
 background:#E8F1FF;
@@ -125,6 +136,7 @@ text-align:center;
 color:#1E4DB7;
 cursor:pointer;
 }
+
 
 
 
