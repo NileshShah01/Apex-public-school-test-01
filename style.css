@@ -64,36 +64,54 @@ color:#1E4DB7;
 }
 .hero
 {
-height:420px;
-
-background:
-linear-gradient(
-rgba(10,42,102,0.75),
-rgba(30,77,183,0.65)
-),
-url("images/School-Building.jpeg");
-
-background-size:cover;
-background-position:center;
-
+position:relative;
+height:450px;
+overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:center;
-
-color:white;
 text-align:center;
-padding:40px;
-}
-.hero-text h2
-{
-font-size:42px;
-margin-bottom:10px;
+color:white;
 }
 
-.hero-text p
+.slider
 {
-font-size:18px;
-opacity:0.95;
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+}
+
+.slide
+{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+transition:opacity 1s ease;
+}
+
+.slide.active
+{
+opacity:1;
+}
+
+.hero::before
+{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(rgba(10,42,102,0.7),rgba(30,77,183,0.6));
+z-index:1;
+}
+
+.hero-text
+{
+position:relative;
+z-index:2;
 }
 .notice
 {
@@ -298,6 +316,7 @@ function toggleMenu()
 var menu = document.getElementById("nav-menu");
 menu.classList.toggle("show");
 }
+
 
 
 
