@@ -53,40 +53,23 @@ menu.classList.remove("show");
 overlay.classList.remove("show");
 }
 let slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
+let index = 0;
 
-function showSlide(index)
+function showSlide()
 {
-slides.forEach(slide => slide.classList.remove("active"));
+slides.forEach(s => s.classList.remove("active"));
+
+index++;
+
+if(index >= slides.length)
+{
+index = 0;
+}
+
 slides[index].classList.add("active");
 }
 
-function nextSlide()
-{
-currentSlide++;
-
-if(currentSlide >= slides.length)
-{
-currentSlide = 0;
-}
-
-showSlide(currentSlide);
-}
-
-function prevSlide()
-{
-currentSlide--;
-
-if(currentSlide < 0)
-{
-currentSlide = slides.length - 1;
-}
-
-showSlide(currentSlide);
-}
-
-setInterval(nextSlide,5000);
-
+setInterval(showSlide,5000);
 window.addEventListener("scroll",function()
 {
 let header = document.querySelector("header");
@@ -119,5 +102,6 @@ reveals[i].classList.add("active");
 }
 
 window.addEventListener("scroll",revealSections);
+
 
 
