@@ -10,26 +10,23 @@
 
 <link rel="stylesheet" href="style.css">
 
-<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-/* BACKGROUND */
+<style>
 
 body
 {
-background-image:url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b");
+background-image:url("https://images.unsplash.com/photo-1523240795612-9a054b0db644");
 background-size:cover;
 background-attachment:fixed;
 background-position:center;
 }
 
-
-/* PAGE HEADER */
-
 .page-header
 {
 text-align:center;
 padding:60px 20px;
-background:rgba(255,255,255,0.92);
+background:rgba(255,255,255,0.9);
 }
 
 .page-header h1
@@ -38,21 +35,15 @@ font-size:36px;
 color:#1E40AF;
 }
 
-
-/* SECTION */
-
 .section
 {
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 padding:50px 20px;
 background:rgba(255,255,255,0.95);
-border-radius:6px;
 margin-bottom:30px;
+border-radius:6px;
 }
-
-
-/* GRID */
 
 .grid
 {
@@ -61,53 +52,66 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
-
-/* CARD */
-
 .card
 {
 background:white;
-padding:22px;
+padding:24px;
 border-radius:6px;
 text-align:center;
-box-shadow:0 6px 14px rgba(0,0,0,0.12);
+box-shadow:0 6px 15px rgba(0,0,0,0.12);
 transition:0.3s;
+cursor:pointer;
 }
 
 .card:hover
 {
-transform:translateY(-6px);
+transform:translateY(-8px) scale(1.02);
 }
 
 .card i
 {
-font-size:32px;
+font-size:34px;
 color:#1E40AF;
 margin-bottom:10px;
 }
 
+.curriculum-table
+{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
 
-/* COUNTERS */
+.curriculum-table th
+{
+background:#1E40AF;
+color:white;
+padding:10px;
+}
+
+.curriculum-table td
+{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
 
 .stats
 {
 text-align:center;
 }
 
-.stat-box
+.stat
 {
 display:inline-block;
-margin:20px 30px;
+margin:20px;
 }
 
-.stat-box h2
+.stat h2
 {
-font-size:38px;
+font-size:40px;
 color:#1E40AF;
 }
-
-
-/* TIMELINE */
 
 .timeline
 {
@@ -117,14 +121,11 @@ margin:auto;
 
 .timeline-item
 {
-margin:20px 0;
-padding:16px;
-border-left:4px solid #1E40AF;
 background:#f4f7ff;
+padding:18px;
+margin:18px 0;
+border-left:5px solid #1E40AF;
 }
-
-
-/* CTA */
 
 .cta
 {
@@ -136,13 +137,13 @@ color:white;
 
 .cta button
 {
-margin-top:15px;
 padding:12px 22px;
 background:white;
 border:none;
 cursor:pointer;
 border-radius:4px;
 font-weight:bold;
+margin-top:15px;
 }
 
 .cta button:hover
@@ -150,26 +151,42 @@ font-weight:bold;
 background:#facc15;
 }
 
+.subject-icons
+{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:20px;
+}
+
+.subject
+{
+text-align:center;
+font-size:14px;
+}
+
+.subject i
+{
+font-size:30px;
+color:#1E40AF;
+}
+
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-
 
 <body>
 
 <div id="header"></div>
 
-
 <section class="page-header">
 
-<h1>Academics at Apex Public School</h1>
+<h1>Academics</h1>
 
-<p>Strong educational foundation from Play Group to Class 8</p>
+<p>Quality education from Play Group to Class 8</p>
 
 </section>
-
 
 <section class="section">
 
@@ -188,26 +205,24 @@ background:#facc15;
 
 </section>
 
-
 <section class="section">
 
 <h2>Subjects Offered</h2>
 
-<div class="grid">
+<div class="subject-icons">
 
-<div class="card"><i class="fa-solid fa-language"></i>English</div>
-<div class="card"><i class="fa-solid fa-pen"></i>Hindi</div>
-<div class="card"><i class="fa-solid fa-calculator"></i>Mathematics</div>
-<div class="card"><i class="fa-solid fa-flask"></i>Science</div>
-<div class="card"><i class="fa-solid fa-earth-asia"></i>Social Science</div>
-<div class="card"><i class="fa-solid fa-computer"></i>Computer Basics</div>
-<div class="card"><i class="fa-solid fa-brain"></i>General Knowledge</div>
-<div class="card"><i class="fa-solid fa-heart"></i>Moral Education</div>
+<div class="subject"><i class="fa-solid fa-language"></i><p>English</p></div>
+<div class="subject"><i class="fa-solid fa-pen"></i><p>Hindi</p></div>
+<div class="subject"><i class="fa-solid fa-calculator"></i><p>Mathematics</p></div>
+<div class="subject"><i class="fa-solid fa-flask"></i><p>Science</p></div>
+<div class="subject"><i class="fa-solid fa-earth-asia"></i><p>Social Science</p></div>
+<div class="subject"><i class="fa-solid fa-computer"></i><p>Computer</p></div>
+<div class="subject"><i class="fa-solid fa-brain"></i><p>General Knowledge</p></div>
+<div class="subject"><i class="fa-solid fa-heart"></i><p>Moral Education</p></div>
 
 </div>
 
 </section>
-
 
 <section class="section">
 
@@ -217,68 +232,82 @@ background:#facc15;
 
 <div class="card">Activity Based Learning</div>
 <div class="card">Concept Based Teaching</div>
-<div class="card">Interactive Class Discussion</div>
+<div class="card">Interactive Classroom</div>
 <div class="card">Student Participation</div>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<h2>Smart Learning</h2>
-
-<div class="grid">
-
-<div class="card">Smart Classrooms</div>
-<div class="card">Educational Videos</div>
+<div class="card">Smart Class Learning</div>
 <div class="card">Digital Presentations</div>
-<div class="card">Computer Lab Practice</div>
 
 </div>
 
 </section>
-
 
 <section class="section stats">
 
 <h2>Academic Strength</h2>
 
-<div class="stat-box">
+<div class="stat">
+
 <h2 class="counter" data-target="300">0</h2>
+
 <p>Students</p>
+
 </div>
 
-<div class="stat-box">
+<div class="stat">
+
 <h2 class="counter" data-target="15">0</h2>
+
 <p>Teachers</p>
+
 </div>
 
-<div class="stat-box">
-<h2 class="counter" data-target="8">0</h2>
-<p>Years of Excellence</p>
+<div class="stat">
+
+<h2 class="counter" data-target="12">0</h2>
+
+<p>Classrooms</p>
+
 </div>
 
 </section>
-
 
 <section class="section">
 
-<h2>Educational Activities</h2>
+<h2>Curriculum Overview</h2>
 
-<div class="grid">
+<table class="curriculum-table">
 
-<div class="card">Science Exhibition</div>
-<div class="card">Quiz Competitions</div>
-<div class="card">Educational Tours</div>
-<div class="card">Cultural Programs</div>
-<div class="card">Sports Day</div>
+<tr>
 
-</div>
+<th>Class Level</th>
+<th>Focus Area</th>
+
+</tr>
+
+<tr>
+
+<td>Play Group</td>
+<td>Basic skills, creativity and social learning</td>
+
+</tr>
+
+<tr>
+
+<td>Primary Classes</td>
+<td>Reading, writing, arithmetic and activities</td>
+
+</tr>
+
+<tr>
+
+<td>Middle Classes</td>
+<td>Advanced subjects and conceptual learning</td>
+
+</tr>
+
+</table>
 
 </section>
-
 
 <section class="section">
 
@@ -295,45 +324,35 @@ background:#facc15;
 
 </section>
 
-
 <section class="section">
 
-<h2>Curriculum Roadmap</h2>
+<h2>School Academic Journey</h2>
 
 <div class="timeline">
 
-<div class="timeline-item">
-Play Group – Basic learning and social skills
-</div>
-
-<div class="timeline-item">
-Primary Classes – Reading, writing and arithmetic
-</div>
-
-<div class="timeline-item">
-Middle Classes – Advanced subjects and conceptual learning
-</div>
+<div class="timeline-item">2018 – School Established</div>
+<div class="timeline-item">2020 – Smart Classrooms Introduced</div>
+<div class="timeline-item">2023 – Computer Lab Established</div>
 
 </div>
 
 </section>
-
 
 <section class="section">
 
-<h2>Academic Calendar</h2>
+<h2>Educational Activities</h2>
 
 <div class="grid">
 
-<div class="card">Annual Examination</div>
-<div class="card">Sports Day</div>
-<div class="card">Independence Day</div>
-<div class="card">Republic Day</div>
+<div class="card">Science Exhibitions</div>
+<div class="card">Quiz Competitions</div>
+<div class="card">Educational Tours</div>
+<div class="card">Sports Activities</div>
+<div class="card">Cultural Programs</div>
 
 </div>
 
 </section>
-
 
 <section class="cta">
 
@@ -341,21 +360,15 @@ Middle Classes – Advanced subjects and conceptual learning
 
 <p>Join Apex Public School for quality education</p>
 
-<button onclick="location.href='contact.html'">
-Admission Inquiry
-</button>
+<button onclick="location.href='contact.html'">Admission Inquiry</button>
 
 </section>
 
-
 <div id="footer"></div>
-
 
 <script src="script.js"></script>
 
 <script>
-
-/* COUNTER */
 
 document.querySelectorAll(".counter").forEach(counter => {
 
@@ -364,17 +377,24 @@ counter.innerText = "0"
 const update = () => {
 
 const target = +counter.getAttribute("data-target")
+
 const count = +counter.innerText
+
 const inc = target / 80
 
 if(count < target)
 {
+
 counter.innerText = Math.ceil(count + inc)
+
 setTimeout(update,20)
+
 }
 else
 {
+
 counter.innerText = target
+
 }
 
 }
