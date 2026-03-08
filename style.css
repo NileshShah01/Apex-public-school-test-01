@@ -9,6 +9,10 @@ linear-gradient(#020111,#191970);
 background-attachment:fixed;
 color:#222;
 }
+html
+{
+scroll-behavior:smooth;
+}
 header
 {
 position:sticky;
@@ -30,6 +34,18 @@ background:white;
 border-radius:8px;
 margin:30px auto;
 max-width:1200px;
+}
+.reveal
+{
+opacity:0;
+transform:translateY(60px);
+transition:all 0.8s ease;
+}
+
+.reveal.active
+{
+opacity:1;
+transform:translateY(0);
 }
 .logo
 {
@@ -393,6 +409,7 @@ padding:10px 18px;
 border-radius:50%;
 cursor:pointer;
 }
+
 
 
 
