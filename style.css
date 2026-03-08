@@ -83,7 +83,11 @@ background:#f5f5f5;
 {
 padding:40px;
 }
-
+.map
+{
+padding:40px;
+text-align:center;
+}
 footer
 {
 background:#0a2a66;
@@ -91,6 +95,7 @@ color:white;
 padding:20px;
 text-align:center;
 }
+
 
 
 
