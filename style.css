@@ -124,7 +124,34 @@ font-size:22px;
 color:#0A2A66;
 margin:0;
 }
+.stats-bar
+{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:25px 20px;
+background:#f4f7ff;
+flex-wrap:wrap;
+}
 
+.stat
+{
+text-align:center;
+min-width:120px;
+}
+
+.stat h3
+{
+font-size:28px;
+color:#1E4DB7;
+margin-bottom:5px;
+}
+
+.stat span
+{
+font-size:14px;
+color:#444;
+}
 .location
 {
 font-size:13px;
@@ -643,6 +670,7 @@ padding:10px 18px;
 border-radius:50%;
 cursor:pointer;
 }
+
 
 
 
