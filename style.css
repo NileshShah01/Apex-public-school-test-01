@@ -902,3 +902,31 @@ display:flex;
 .testimonial.active {
     display: block;
 }
+
+/* ==================== ABOUT PAGE STYLES ==================== */
+.about-hero {
+    height: 380px;
+    background: linear-gradient(rgba(10,42,102,0.75), rgba(30,77,183,0.65)), url('images/School-Building.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.mission-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
