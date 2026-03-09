@@ -10,6 +10,7 @@
 
 <div id="header"></div>
 
+<!-- 1. HERO -->
 <section class="hero">
     <div class="slider">
         <img src="images/School-Building.jpeg" class="slide active">
@@ -18,59 +19,88 @@
         <img src="images/Republic-Day-img1.jpeg" class="slide">
     </div>
     <div class="hero-content">
-        <h2>Inspire. Learn. Achieve.</h2>
-        <p>Quality Education with Discipline & Care</p>
+        <h2>Welcome to Apex Public School</h2>
+        <p>Building Future Leaders with Quality Education & Discipline</p>
+        <div class="hero-buttons">
+            <a href="admissions.html" class="btn-primary">Admission Open 2026-27</a>
+            <a href="inquiry.html" class="btn-secondary">Inquiry Now</a>
+        </div>
     </div>
 </section>
 
+<!-- 2. NOTICE BOARD -->
 <section class="notice reveal">
-    <h3>Notice</h3>
-    <p>Admission open for Session 2026 to 2027. Contact school office for enquiry.</p>
+    <h3>Latest Notice</h3>
+    <p>Admission open for Session 2026-2027 • Holi Holiday Notice • Annual Exam Schedule</p>
 </section>
 
-<section class="stats-bar reveal">
-    <div class="stat"><h3 class="counter" data-target="300">0</h3><span>Students</span></div>
-    <div class="stat"><h3 class="counter" data-target="15">0</h3><span>Teachers</span></div>
-    <div class="stat"><h3 class="counter" data-target="12">0</h3><span>Classrooms</span></div>
-    <div class="stat"><h3 class="counter" data-target="8">0</h3><span>Years</span></div>
-</section>
-
-<section class="principal reveal">
-    <h2>Principal's Message</h2>
-    <div class="principal-content">
-        <p>Education is not just about books — it is about building confidence, discipline, and character. At Apex Public School, we believe every child deserves quality education, especially those from economically weaker families.</p>
-        <p>Our dedicated teachers focus on strong academic foundation, moral values, and preparation for future competitive examinations. We create a safe, loving, and modern learning environment where every student can grow into a responsible and successful citizen.</p>
-        <p><strong>— Baby Kumari</strong><br>Principal, Apex Public School</p>
+<!-- 3. QUICK NAVIGATION -->
+<section class="quick-nav reveal">
+    <h2>Quick Access</h2>
+    <div class="nav-grid">
+        <div class="nav-card"><i class="fa-solid fa-file"></i><p>Admissions</p></div>
+        <div class="nav-card"><i class="fa-solid fa-school"></i><p>Facilities</p></div>
+        <div class="nav-card"><i class="fa-solid fa-book"></i><p>Academics</p></div>
+        <div class="nav-card"><i class="fa-solid fa-image"></i><p>Gallery</p></div>
+        <div class="nav-card"><i class="fa-solid fa-trophy"></i><p>Achievements</p></div>
+        <div class="nav-card"><i class="fa-solid fa-calendar"></i><p>Events</p></div>
     </div>
 </section>
 
-<!-- Facilities Automatic Slider (Same style as Facilities Page) -->
+<!-- 4. ABOUT PREVIEW + PRINCIPAL -->
+<section class="principal reveal">
+    <h2>About Apex Public School</h2>
+    <p>Apex Public School, Anjani Bazar provides quality education from Play Group to Class 8 with focus on discipline, academics and character building.</p>
+    <p><strong>Principal's Message:</strong> Education builds confidence and character. We support every child, especially from weaker families, to prepare them for a bright future.</p>
+    <p><strong>— Baby Kumari</strong></p>
+    <a href="about.html" class="btn-secondary">Read Full Story</a>
+</section>
+
+<!-- 5. FACILITIES SLIDER (exact style as Facilities page) -->
 <section class="facilities-slider reveal">
     <h2>Our Facilities</h2>
     <div class="slider-track">
-        <div class="facility-slide">
-            <img src="images/Classroom-img1.jpeg">
-            <div class="facility-name">Smart Classrooms</div>
+        <div class="facility-slide"><img src="images/Classroom-img1.jpeg"><div class="facility-name">Smart Classrooms</div></div>
+        <div class="facility-slide"><img src="images/School-Building.jpeg"><div class="facility-name">Computer Lab</div></div>
+        <div class="facility-slide"><img src="images/Sports-Event-Prize-Distribution-img1.jpeg"><div class="facility-name">Sports Ground</div></div>
+        <div class="facility-slide"><img src="images/Classroom-img1.jpeg"><div class="facility-name">CCTV Security</div></div>
+        <div class="facility-slide"><img src="images/School-Building.jpeg"><div class="facility-name">School Transport</div></div>
+        <div class="facility-slide"><img src="images/Sports-Event-Prize-Distribution-img1.jpeg"><div class="facility-name">Playground</div></div>
+    </div>
+</section>
+
+<!-- 6. GALLERY PREVIEW -->
+<section class="home-gallery reveal">
+    <h2>School Moments</h2>
+    <div class="gallery-grid">
+        <img src="images/Bihar-Museum-img1.jpeg" onclick="openLightbox(this)">
+        <img src="images/Science-centre-Patna-img3.jpeg" onclick="openLightbox(this)">
+        <img src="images/Republic-Day-img1.jpeg" onclick="openLightbox(this)">
+        <img src="images/Sports-Event-Prize-Distribution-img1.jpeg" onclick="openLightbox(this)">
+    </div>
+    <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
+</section>
+
+<!-- 7-9. ACHIEVEMENTS + TESTIMONIALS + EVENTS -->
+<section class="reveal" style="padding:60px 20px;background:#f8fafc;">
+    <div style="max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;">
+        <!-- Achievements -->
+        <div>
+            <h3>🏆 Achievements</h3>
+            <p>District Science Competition Winner 2025</p>
+            <p>100% Pass Rate in Annual Exams</p>
         </div>
-        <div class="facility-slide">
-            <img src="images/School-Building.jpeg">
-            <div class="facility-name">Computer Lab</div>
+        <!-- Testimonials -->
+        <div>
+            <h3>Parent Testimonials</h3>
+            <p>“Best school in Parsa for discipline and education.”</p>
+            <small>— Ramesh Kumar, Parent</small>
         </div>
-        <div class="facility-slide">
-            <img src="images/Sports-Event-Prize-Distribution-img1.jpeg">
-            <div class="facility-name">Sports Ground</div>
-        </div>
-        <div class="facility-slide">
-            <img src="images/Classroom-img1.jpeg">
-            <div class="facility-name">CCTV Security</div>
-        </div>
-        <div class="facility-slide">
-            <img src="images/School-Building.jpeg">
-            <div class="facility-name">School Transport</div>
-        </div>
-        <div class="facility-slide">
-            <img src="images/Sports-Event-Prize-Distribution-img1.jpeg">
-            <div class="facility-name">Playground with Swings</div>
+        <!-- Events -->
+        <div>
+            <h3>Upcoming Events</h3>
+            <p>Annual Function – 15 March 2026</p>
+            <p>Sports Day – 25 March 2026</p>
         </div>
     </div>
 </section>
