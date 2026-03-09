@@ -156,3 +156,16 @@ header.style.boxShadow = "0 2px 8px rgba(0,0,0,0.08)";
 
 });
 
+/* MOBILE MENU */
+
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+if(toggle)
+{
+toggle.addEventListener("click", () =>
+{
+menu.classList.toggle("active");
+});
+}
+
