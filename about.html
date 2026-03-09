@@ -1,492 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About | Apex Public School</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-
-/* UNIVERSE BACKGROUND */
-
-body
-{
-background-image:url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa");
-background-size:cover;
-background-attachment:fixed;
-background-position:center;
-}
-
-
-/* PAGE HEADER */
-
-.page-header
-{
-text-align:center;
-padding:60px 20px;
-background:rgba(255,255,255,0.9);
-}
-
-.page-header h1
-{
-font-size:38px;
-color:#1E40AF;
-}
-
-
-/* SECTION */
-
-.section
-{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
-background:rgba(255,255,255,0.95);
-border-radius:6px;
-margin-bottom:30px;
-}
-
-
-/* GRID */
-
-.grid
-{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-
-/* CARD */
-
-.card
-{
-background:white;
-padding:25px;
-border-radius:6px;
-text-align:center;
-box-shadow:0 6px 14px rgba(0,0,0,0.12);
-transition:0.3s;
-}
-
-.card:hover
-{
-transform:translateY(-8px);
-}
-
-.card i
-{
-font-size:36px;
-color:#1E40AF;
-margin-bottom:10px;
-}
-
-
-/* INTRO */
-
-.intro
-{
-display:flex;
-gap:30px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.intro img
-{
-width:420px;
-border-radius:6px;
-}
-
-
-/* PRINCIPAL */
-
-.principal-box
-{
-display:flex;
-gap:30px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.principal-box img
-{
-width:220px;
-border-radius:6px;
-}
-
-
-/* COUNTERS */
-
-.stats
-{
-text-align:center;
-}
-
-.stat
-{
-display:inline-block;
-margin:20px 30px;
-}
-
-.stat h2
-{
-font-size:40px;
-color:#1E40AF;
-}
-
-
-/* TIMELINE */
-
-.timeline
-{
-max-width:700px;
-margin:auto;
-}
-
-.timeline-item
-{
-background:#f4f7ff;
-padding:18px;
-margin:18px 0;
-border-left:5px solid #1E40AF;
-}
-
-
-/* GALLERY */
-
-.gallery
-{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-
-.gallery img
-{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:6px;
-transition:0.3s;
-cursor:pointer;
-}
-
-.gallery img:hover
-{
-transform:scale(1.06);
-}
-
-
-/* CTA */
-
-.cta
-{
-text-align:center;
-padding:50px 20px;
-background:#1E40AF;
-color:white;
-}
-
-.cta button
-{
-margin-top:15px;
-padding:12px 22px;
-background:white;
-border:none;
-cursor:pointer;
-border-radius:4px;
-font-weight:bold;
-}
-
-.cta button:hover
-{
-background:#facc15;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Apex Public School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
-
 <body>
 
 <div id="header"></div>
 
-
-<section class="page-header">
-
-<h1>About Apex Public School</h1>
-
-<p>Quality education and discipline for future leaders</p>
-
+<!-- Hero -->
+<section class="about-hero">
+    <div>
+        <h1>About Apex Public School</h1>
+        <p>Quality Education with Discipline Since 2018</p>
+    </div>
 </section>
 
-
-
-<section class="section intro">
-
-<img src="images/School-Building.jpeg">
-
-<div>
-
-<h2>Welcome to Apex Public School</h2>
-
-<p>
-Apex Public School located in Anjani Bazar, Parsa, Saran provides quality education from Play Group to Class 8. Our institution focuses on academic excellence, discipline, and character development for students.
-</p>
-
-<p>
-The school aims to provide strong educational foundation and prepare students for future competitive challenges.
-</p>
-
-</div>
-
+<!-- Introduction -->
+<section class="section reveal">
+    <h2>Welcome to Apex Public School</h2>
+    <p>Apex Public School, located in Anjani Bazar, Parsa, Saran, is committed to providing quality education from Play Group to Class 8. We focus on academic excellence, moral values, discipline, and overall personality development of every child.</p>
+    <p>Our mission is to create a safe, modern, and nurturing environment where every student can grow into a confident and responsible citizen.</p>
 </section>
 
-
-
-<section class="section principal-box">
-
-<img src="images/Principal.jpeg">
-
-<div>
-
-<h2>Principal Message</h2>
-
-<p>
-Education builds confidence, discipline and strong character. Our goal is to provide equal learning opportunities to every child including economically weaker students. We focus on academic excellence and holistic development.
-</p>
-
-</div>
-
+<!-- Vision & Mission -->
+<section class="section reveal">
+    <h2>Our Vision & Mission</h2>
+    <div class="mission-vision-grid">
+        <div class="mission-card">
+            <i class="fa-solid fa-eye fa-3x" style="color:#1E40AF;"></i>
+            <h3>Vision</h3>
+            <p>To become a leading school in the region known for academic excellence, discipline, and character building.</p>
+        </div>
+        <div class="mission-card">
+            <i class="fa-solid fa-bullseye fa-3x" style="color:#1E40AF;"></i>
+            <h3>Mission</h3>
+            <p>To provide affordable quality education that develops responsible, disciplined, and confident students ready for future challenges.</p>
+        </div>
+    </div>
 </section>
 
-
-
-<section class="section stats">
-
-<h2>School Statistics</h2>
-
-<div class="stat">
-
-<h2 class="counter" data-target="300">0</h2>
-
-<p>Students</p>
-
-</div>
-
-<div class="stat">
-
-<h2 class="counter" data-target="15">0</h2>
-
-<p>Teachers</p>
-
-</div>
-
-<div class="stat">
-
-<h2 class="counter" data-target="12">0</h2>
-
-<p>Classrooms</p>
-
-</div>
-
-<div class="stat">
-
-<h2>Play to 8</h2>
-
-<p>Classes</p>
-
-</div>
-
+<!-- Principal Message -->
+<section class="principal reveal">
+    <h2>Principal's Message</h2>
+    <div class="principal-content">
+        <p>Education builds confidence, discipline and strong character. At Apex Public School, we believe every child deserves quality education, especially those from economically weaker families.</p>
+        <p>Our dedicated teachers focus on strong academic foundation, moral values, and preparation for future competitive examinations. We create a safe, loving, and modern learning environment where every student can grow into a responsible and successful citizen.</p>
+        <p><strong>— Baby Kumari</strong><br>Principal, Apex Public School</p>
+    </div>
 </section>
 
-
-
-<section class="section">
-
-<h2>Mission and Vision</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<i class="fa-solid fa-bullseye"></i>
-
-<h3>Mission</h3>
-
-<p>
-Provide affordable quality education and develop responsible citizens.
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-eye"></i>
-
-<h3>Vision</h3>
-
-<p>
-Create an educational environment that encourages learning and character building.
-</p>
-
-</div>
-
-</div>
-
+<!-- Statistics -->
+<section class="stats-bar reveal">
+    <div class="stat"><h3 class="counter" data-target="300">0</h3><span>Students</span></div>
+    <div class="stat"><h3 class="counter" data-target="15">0</h3><span>Teachers</span></div>
+    <div class="stat"><h3 class="counter" data-target="12">0</h3><span>Classrooms</span></div>
+    <div class="stat"><h3 class="counter" data-target="8">0</h3><span>Years</span></div>
 </section>
 
-
-
-<section class="section">
-
-<h2>School Facilities</h2>
-
-<div class="grid">
-
-<div class="card"><i class="fa-solid fa-tv"></i>Smart Classrooms</div>
-
-<div class="card"><i class="fa-solid fa-computer"></i>Computer Lab</div>
-
-<div class="card"><i class="fa-solid fa-futbol"></i>Sports Ground</div>
-
-<div class="card"><i class="fa-solid fa-water"></i>Drinking Water</div>
-
-<div class="card"><i class="fa-solid fa-video"></i>CCTV Security</div>
-
-<div class="card"><i class="fa-solid fa-bus"></i>Transport</div>
-
-</div>
-
+<!-- Facilities Overview -->
+<section class="section reveal">
+    <h2>Our Facilities</h2>
+    <div class="grid">
+        <div class="card"><i class="fa-solid fa-tv"></i> Smart Classrooms</div>
+        <div class="card"><i class="fa-solid fa-computer"></i> Computer Lab</div>
+        <div class="card"><i class="fa-solid fa-futbol"></i> Sports Ground</div>
+        <div class="card"><i class="fa-solid fa-bus"></i> School Transport</div>
+        <div class="card"><i class="fa-solid fa-video"></i> CCTV Security</div>
+        <div class="card"><i class="fa-solid fa-water"></i> Drinking Water</div>
+    </div>
 </section>
 
-
-
-<section class="section">
-
-<h2>School Journey</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">2018 – School established</div>
-
-<div class="timeline-item">2020 – Smart classrooms introduced</div>
-
-<div class="timeline-item">2023 – Computer lab established</div>
-
-</div>
-
+<!-- School Journey Timeline -->
+<section class="section reveal">
+    <h2>Our Journey</h2>
+    <div class="timeline">
+        <div class="timeline-item">2018 – School Established</div>
+        <div class="timeline-item">2020 – Smart Classrooms Introduced</div>
+        <div class="timeline-item">2023 – Computer Lab Established</div>
+    </div>
 </section>
 
-
-
-<section class="section">
-
-<h2>School Activities</h2>
-
-<div class="gallery">
-
-<img src="images/Republic-Day-img1.jpeg">
-
-<img src="images/Sports-Event-Prize-Distribution-img1.jpeg">
-
-<img src="images/Science-centre-Patna-img3.jpeg">
-
-<img src="images/Bihar-Museum-img1.jpeg">
-
-<img src="images/Vaisali-School-Trip-img1.jpeg">
-
-<img src="images/Classroom-img1.jpeg">
-
-</div>
-
+<!-- Gallery Preview -->
+<section class="home-gallery reveal">
+    <h2>School Activities</h2>
+    <div class="gallery-grid">
+        <img src="images/Bihar-Museum-img1.jpeg" onclick="openLightbox(this)">
+        <img src="images/Science-centre-Patna-img3.jpeg" onclick="openLightbox(this)">
+        <img src="images/Republic-Day-img1.jpeg" onclick="openLightbox(this)">
+        <img src="images/Sports-Event-Prize-Distribution-img1.jpeg" onclick="openLightbox(this)">
+    </div>
+    <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
 </section>
 
-
-
-<section class="cta">
-
-<h2>Admissions Open 2026 to 2027</h2>
-
-<p>Join Apex Public School for quality education</p>
-
-<button onclick="location.href='contact.html'">
-
-Contact School
-
-</button>
-
+<!-- CTA -->
+<section class="cta reveal">
+    <h2>Admission Open 2026 to 2027</h2>
+    <p>Join Apex Public School for quality education and bright future</p>
+    <button onclick="location.href='admissions.html'">Apply Now</button>
 </section>
-
-
 
 <div id="footer"></div>
 
-
 <script src="script.js"></script>
-
-
-<script>
-
-/* COUNTER */
-
-document.querySelectorAll(".counter").forEach(counter => {
-
-counter.innerText = "0"
-
-const update = () => {
-
-const target = +counter.getAttribute("data-target")
-
-const count = +counter.innerText
-
-const inc = target / 80
-
-if(count < target)
-{
-
-counter.innerText = Math.ceil(count + inc)
-
-setTimeout(update,20)
-
-}
-else
-{
-
-counter.innerText = target
-
-}
-
-}
-
-update()
-
-})
-
-
-/* BACKGROUND MOUSE MOVEMENT */
-
-document.addEventListener("mousemove", e => {
-
-let x = e.clientX / window.innerWidth
-let y = e.clientY / window.innerHeight
-
-document.body.style.backgroundPosition = `${x*40}px ${y*40}px`
-
-})
-
-</script>
-
-
 </body>
-
 </html>
