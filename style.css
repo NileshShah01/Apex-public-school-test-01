@@ -822,3 +822,83 @@ display:flex;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
+/* ==================== RECREATED HOMEPAGE (Inspired by hisparsasaran.com) ==================== */
+.homepage-hero {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Notice Board */
+.notice-board {
+    background: #fff3cd;
+    padding: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #856404;
+    border-bottom: 2px solid #ffeaa7;
+}
+
+/* Birthday Calendar */
+.birthday-section {
+    padding: 50px 20px;
+    background: #f8fafc;
+    text-align: center;
+}
+.birthday-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+.birthday-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Academic Calendar */
+.calendar-section {
+    padding: 50px 20px;
+    background: white;
+}
+
+/* Testimonials */
+.testimonial-section {
+    padding: 60px 20px;
+    background: #f8fafc;
+    text-align: center;
+}
+.testimonial-slider {
+    max-width: 800px;
+    margin: auto;
+}
+.testimonial {
+    display: none;
+    font-style: italic;
+    color: #333;
+}
+.testimonial.active {
+    display: block;
+}
