@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,13 +10,15 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
-/* OLD MAP BACKGROUND */
+/* UNIVERSE BACKGROUND */
 
 body
 {
-background-image:url("https://images.unsplash.com/photo-1586165368502-1bad197a6461");
+background-image:url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa");
 background-size:cover;
 background-attachment:fixed;
 background-position:center;
@@ -27,29 +30,62 @@ background-position:center;
 .page-header
 {
 text-align:center;
-padding:50px 20px;
-background:rgba(255,255,255,0.92);
-backdrop-filter:blur(4px);
+padding:60px 20px;
+background:rgba(255,255,255,0.9);
 }
 
 .page-header h1
 {
+font-size:38px;
 color:#1E40AF;
-font-size:36px;
-margin-bottom:8px;
 }
 
 
-/* SECTION BASE */
+/* SECTION */
 
-.about-section
+.section
 {
 max-width:1100px;
 margin:auto;
 padding:50px 20px;
 background:rgba(255,255,255,0.95);
-margin-bottom:30px;
 border-radius:6px;
+margin-bottom:30px;
+}
+
+
+/* GRID */
+
+.grid
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+
+/* CARD */
+
+.card
+{
+background:white;
+padding:25px;
+border-radius:6px;
+text-align:center;
+box-shadow:0 6px 14px rgba(0,0,0,0.12);
+transition:0.3s;
+}
+
+.card:hover
+{
+transform:translateY(-8px);
+}
+
+.card i
+{
+font-size:36px;
+color:#1E40AF;
+margin-bottom:10px;
 }
 
 
@@ -67,12 +103,6 @@ flex-wrap:wrap;
 {
 width:420px;
 border-radius:6px;
-transition:0.4s;
-}
-
-.intro img:hover
-{
-transform:scale(1.04);
 }
 
 
@@ -93,50 +123,23 @@ border-radius:6px;
 }
 
 
-/* STATS */
+/* COUNTERS */
 
 .stats
 {
 text-align:center;
-background:rgba(255,255,255,0.9);
-padding:50px 20px;
 }
 
-.stat-box
+.stat
 {
 display:inline-block;
 margin:20px 30px;
 }
 
-.stat-box h2
+.stat h2
 {
-font-size:38px;
+font-size:40px;
 color:#1E40AF;
-}
-
-
-/* FACILITIES GRID */
-
-.facility-grid
-{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.facility-card
-{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:6px;
-box-shadow:0 6px 14px rgba(0,0,0,0.12);
-transition:0.3s;
-}
-
-.facility-card:hover
-{
-transform:translateY(-6px);
 }
 
 
@@ -150,34 +153,35 @@ margin:auto;
 
 .timeline-item
 {
-margin:20px 0;
-padding:16px;
-border-left:4px solid #1E40AF;
 background:#f4f7ff;
+padding:18px;
+margin:18px 0;
+border-left:5px solid #1E40AF;
 }
 
 
 /* GALLERY */
 
-.about-gallery
+.gallery
 {
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
 }
 
-.about-gallery img
+.gallery img
 {
 width:100%;
 height:180px;
 object-fit:cover;
 border-radius:6px;
-transition:0.4s;
+transition:0.3s;
+cursor:pointer;
 }
 
-.about-gallery img:hover
+.gallery img:hover
 {
-transform:scale(1.08);
+transform:scale(1.06);
 }
 
 
@@ -198,9 +202,8 @@ padding:12px 22px;
 background:white;
 border:none;
 cursor:pointer;
-font-weight:bold;
 border-radius:4px;
-transition:0.3s;
+font-weight:bold;
 }
 
 .cta button:hover
@@ -212,8 +215,8 @@ background:#facc15;
 
 </head>
 
-<body>
 
+<body>
 
 <div id="header"></div>
 
@@ -221,12 +224,14 @@ background:#facc15;
 <section class="page-header">
 
 <h1>About Apex Public School</h1>
-<p>Education for a brighter future</p>
+
+<p>Quality education and discipline for future leaders</p>
 
 </section>
 
 
-<section class="about-section intro">
+
+<section class="section intro">
 
 <img src="images/School-Building.jpeg">
 
@@ -235,11 +240,11 @@ background:#facc15;
 <h2>Welcome to Apex Public School</h2>
 
 <p>
-Apex Public School located in Anjani Bazar, Parsa, Saran provides quality education from Play Group to Class 8. The school focuses on strong academic foundation, discipline and character development.
+Apex Public School located in Anjani Bazar, Parsa, Saran provides quality education from Play Group to Class 8. Our institution focuses on academic excellence, discipline, and character development for students.
 </p>
 
 <p>
-Our institution supports students from every background and prepares them for future competitive examinations and responsible citizenship.
+The school aims to provide strong educational foundation and prepare students for future competitive challenges.
 </p>
 
 </div>
@@ -247,7 +252,8 @@ Our institution supports students from every background and prepares them for fu
 </section>
 
 
-<section class="about-section principal-box">
+
+<section class="section principal-box">
 
 <img src="images/Principal.jpeg">
 
@@ -256,7 +262,7 @@ Our institution supports students from every background and prepares them for fu
 <h2>Principal Message</h2>
 
 <p>
-Education builds strong character and prepares students for future challenges. Our goal is to provide equal learning opportunities for every child including economically weaker students. We focus on discipline, strong academic base and holistic development.
+Education builds confidence, discipline and strong character. Our goal is to provide equal learning opportunities to every child including economically weaker students. We focus on academic excellence and holistic development.
 </p>
 
 </div>
@@ -264,92 +270,117 @@ Education builds strong character and prepares students for future challenges. O
 </section>
 
 
-<section class="stats">
 
-<div class="stat-box">
+<section class="section stats">
+
+<h2>School Statistics</h2>
+
+<div class="stat">
+
 <h2 class="counter" data-target="300">0</h2>
+
 <p>Students</p>
+
 </div>
 
-<div class="stat-box">
+<div class="stat">
+
 <h2 class="counter" data-target="15">0</h2>
+
 <p>Teachers</p>
+
 </div>
 
-<div class="stat-box">
+<div class="stat">
+
 <h2 class="counter" data-target="12">0</h2>
+
 <p>Classrooms</p>
+
 </div>
 
-<div class="stat-box">
+<div class="stat">
+
 <h2>Play to 8</h2>
+
 <p>Classes</p>
-</div>
-
-</section>
-
-
-<section class="about-section">
-
-<h2>Mission</h2>
-
-<p>
-To provide affordable and quality education that prepares students for academic success and responsible citizenship.
-</p>
-
-<h2>Vision</h2>
-
-<p>
-To become a leading school in the region known for academic excellence and moral values.
-</p>
-
-</section>
-
-
-<section class="about-section">
-
-<h2>Facilities</h2>
-
-<div class="facility-grid">
-
-<div class="facility-card">Smart Classrooms</div>
-<div class="facility-card">Computer Lab</div>
-<div class="facility-card">Sports Ground</div>
-<div class="facility-card">CCTV Security</div>
-<div class="facility-card">Transport</div>
-<div class="facility-card">Playground</div>
 
 </div>
 
 </section>
 
 
-<section class="about-section">
 
-<h2>Why Choose Us</h2>
+<section class="section">
 
-<ul>
+<h2>Mission and Vision</h2>
 
-<li>Experienced teachers</li>
-<li>Individual student attention</li>
-<li>Safe learning environment</li>
-<li>Affordable education</li>
-<li>Modern teaching methods</li>
-<li>Focus on moral values</li>
+<div class="grid">
 
-</ul>
+<div class="card">
+
+<i class="fa-solid fa-bullseye"></i>
+
+<h3>Mission</h3>
+
+<p>
+Provide affordable quality education and develop responsible citizens.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-eye"></i>
+
+<h3>Vision</h3>
+
+<p>
+Create an educational environment that encourages learning and character building.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 
-<section class="about-section">
+
+<section class="section">
+
+<h2>School Facilities</h2>
+
+<div class="grid">
+
+<div class="card"><i class="fa-solid fa-tv"></i>Smart Classrooms</div>
+
+<div class="card"><i class="fa-solid fa-computer"></i>Computer Lab</div>
+
+<div class="card"><i class="fa-solid fa-futbol"></i>Sports Ground</div>
+
+<div class="card"><i class="fa-solid fa-water"></i>Drinking Water</div>
+
+<div class="card"><i class="fa-solid fa-video"></i>CCTV Security</div>
+
+<div class="card"><i class="fa-solid fa-bus"></i>Transport</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
 
 <h2>School Journey</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">2018 – School established</div>
-<div class="timeline-item">2020 – Smart classroom introduced</div>
+
+<div class="timeline-item">2020 – Smart classrooms introduced</div>
+
 <div class="timeline-item">2023 – Computer lab established</div>
 
 </div>
@@ -357,17 +388,23 @@ To become a leading school in the region known for academic excellence and moral
 </section>
 
 
-<section class="about-section">
+
+<section class="section">
 
 <h2>School Activities</h2>
 
-<div class="about-gallery">
+<div class="gallery">
 
 <img src="images/Republic-Day-img1.jpeg">
+
 <img src="images/Sports-Event-Prize-Distribution-img1.jpeg">
+
 <img src="images/Science-centre-Patna-img3.jpeg">
+
 <img src="images/Bihar-Museum-img1.jpeg">
+
 <img src="images/Vaisali-School-Trip-img1.jpeg">
+
 <img src="images/Classroom-img1.jpeg">
 
 </div>
@@ -375,22 +412,81 @@ To become a leading school in the region known for academic excellence and moral
 </section>
 
 
+
 <section class="cta">
 
-<h2>Admission Open 2026 to 2027</h2>
+<h2>Admissions Open 2026 to 2027</h2>
 
-<p>Admissions available from Play Group to Class 8</p>
+<p>Join Apex Public School for quality education</p>
 
 <button onclick="location.href='contact.html'">
+
 Contact School
+
 </button>
 
 </section>
 
 
+
 <div id="footer"></div>
+
 
 <script src="script.js"></script>
 
+
+<script>
+
+/* COUNTER */
+
+document.querySelectorAll(".counter").forEach(counter => {
+
+counter.innerText = "0"
+
+const update = () => {
+
+const target = +counter.getAttribute("data-target")
+
+const count = +counter.innerText
+
+const inc = target / 80
+
+if(count < target)
+{
+
+counter.innerText = Math.ceil(count + inc)
+
+setTimeout(update,20)
+
+}
+else
+{
+
+counter.innerText = target
+
+}
+
+}
+
+update()
+
+})
+
+
+/* BACKGROUND MOUSE MOVEMENT */
+
+document.addEventListener("mousemove", e => {
+
+let x = e.clientX / window.innerWidth
+let y = e.clientY / window.innerHeight
+
+document.body.style.backgroundPosition = `${x*40}px ${y*40}px`
+
+})
+
+</script>
+
+
 </body>
+
 </html>
