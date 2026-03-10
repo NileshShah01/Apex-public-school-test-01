@@ -216,14 +216,12 @@ background:#ddd;
 <section class="slider-wrap">
 
 <div class="slider-track">
-
-<img src="images/Facilities-Slide-img1.jpeg">
-<img src="images/Facilities-Slide-img2.jpeg">
-<img src="images/Facilities-Slide-img3.jpeg">
-<img src="images/Facilities-Slide-img4.jpeg">
-<img src="images/Bihar-Museum-img4.jpeg">
-<img src="images/Science-centre-Patna-img1.jpeg">
-
+  <img src="images/Facilities-Slide-img1.jpeg"> alt="School Campus">
+  <img src="images/Facilities-Slide-img2.jpeg"> alt="School Building">
+  <img src="images/Facilities-Slide-img3.jpeg"> alt="School Playground">
+  <img src="images/Facilities-Slide-img4.jpeg"> alt="School Office">
+  <img src="images/Bihar-Museum-img4.jpeg"> alt="Bihar Museum School Trip">
+  <img src="images/Science-centre-Patna-img1.jpeg"> alt=" Science Centre Patna School Trip">
 </div>
 
 </section>
@@ -232,31 +230,37 @@ background:#ddd;
 <section class="facility-grid">
 
 <div class="facility-card">
+  <i class="fas fa-tv fa-3x mb-3 text-primary"></i>
 <h3>Smart Classrooms</h3>
 <p>Digital learning tools for modern education</p>
 </div>
 
 <div class="facility-card">
+  <i class="fas fa-computer fa-3x mb-3 text-primary"></i>
 <h3>Computer Lab</h3>
 <p>Basic computer education for students</p>
 </div>
 
 <div class="facility-card">
+  <i class="fas fa-Playground fa-3x mb-3 text-primary"></i>
 <h3>Sports Ground</h3>
 <p>Large playground for sports activities</p>
 </div>
 
 <div class="facility-card">
+<i class="fas fa-CCTV fa-3x mb-3 text-primary"></i>
 <h3>CCTV Security</h3>
 <p>24 hour campus monitoring</p>
 </div>
 
 <div class="facility-card">
+  <i class="fas fa-Bus fa-3x mb-3 text-primary"></i>
 <h3>Transport</h3>
 <p>Safe school transport service</p>
 </div>
 
 <div class="facility-card">
+  <i class="fas fa-Slides fa-3x mb-3 text-primary"></i>
 <h3>Playground</h3>
 <p>Swings and slides for children</p>
 </div>
@@ -269,14 +273,12 @@ background:#ddd;
 <h2>Facilities Gallery</h2>
 
 <div class="gallery-grid">
-
-<img src="images/Classroom-img1.jpeg">
-<img src="images/School-Building.jpeg">
-<img src="images/Science-centre-Patna-img3.jpeg">
-<img src="images/Sports-Event-Prize-Distribution-img1.jpeg">
-<img src="images/Bihar-Museum-img1.jpeg">
-<img src="images/Republic-Day-img1.jpeg">
-
+  <img src="images/Classroom-img1.jpeg"> alt="Classroom">
+  <img src="images/School-Building.jpeg"> alt="School Building">
+  <img src="images/Science-centre-Patna-img3.jpeg"> alt="School Trip Science Centre">
+  <img src="images/Sports-Event-Prize-Distribution-img1.jpeg"> alt="Sports Competition">
+  <img src="images/Bihar-Museum-img1.jpeg"> alt="School Trip Bihar Museum">
+  <img src="images/Republic-Day-img1.jpeg"> alt="Republic Day -26th">
 </div>
 
 </section>
@@ -348,41 +350,52 @@ Students participate in sports, cultural activities, educational trips and event
 
 <div id="footer"></div>
 
-
+<script src="script.js"></script>
 <script>
 
-/* COUNTER */
+<script>
+// COUNTER ANIMATION - IMPROVED
+const counters = document.querySelectorAll(".counter");
 
-document.querySelectorAll(".counter").forEach(counter=>{
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      counters.forEach(counter => {
+        counter.innerText = "0";
+        const target = parseInt(counter.getAttribute("data-target")) || 0;
+        if (target === 0) {
+          counter.innerText = "0";
+          return;
+        }
 
-counter.innerText="0"
+        let count = 0;
+        const duration = 1800;          // ms
+        const stepTime = 20;
+        const increment = target / (duration / stepTime);
 
-const update=()=>{
+        const update = () => {
+          count += increment;
+          counter.innerText = Math.ceil(count);
+          if (count < target) {
+            setTimeout(update, stepTime);
+          } else {
+            counter.innerText = target + "+";   // optional: add + for "300+"
+          }
+        };
+        update();
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
 
-const target=+counter.getAttribute("data-target")
-const count=+counter.innerText
-const inc=target/80
-
-if(count<target)
-{
-counter.innerText=Math.ceil(count+inc)
-setTimeout(update,20)
-}
-else
-{
-counter.innerText=target
-}
-
-}
-
-update()
-
-})
-
+// Observe the stats section
+document.querySelector(".facility-stats")?.forEach(el => observer.observe(el));
 </script>
 
 </body>
 </html>
+
 
 
 
