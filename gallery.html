@@ -381,14 +381,14 @@ link.click()
 function filterGallery(category)
 {
 let cards = document.querySelectorAll(".gallery-card")
+let buttons = document.querySelectorAll(".filter-buttons button")
+
+buttons.forEach(btn => btn.classList.remove("active"))
+event.target.classList.add("active")
 
 cards.forEach(card =>
 {
-if(category === "all")
-{
-card.style.display = "block"
-}
-else if(card.classList.contains(category))
+if(category === "all" || card.classList.contains(category))
 {
 card.style.display = "block"
 }
@@ -397,7 +397,13 @@ else
 card.style.display = "none"
 }
 })
+}
 
+Add CSS.
+
+.filter-buttons button.active
+{
+background:#2563EB;
 }
 
 </script>
@@ -405,6 +411,7 @@ card.style.display = "none"
 </body>
 
 </html>
+
 
 
 
