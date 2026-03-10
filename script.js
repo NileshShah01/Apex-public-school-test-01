@@ -10,6 +10,7 @@ document.getElementById(id).innerHTML = data;
 
 loadComponent("header","header.html");
 loadComponent("footer","footer.html");
+loadComponent("floating-buttons", "floating-button.html");
 /* HERO SLIDER */
 
 let slides = document.querySelectorAll(".slide");
@@ -47,7 +48,7 @@ showSlide(currentSlide);
 
 /* AUTO SLIDER */
 
-setInterval(nextSlide,5000);
+setInterval(nextSlide,3000);
 
 
 
@@ -170,5 +171,6 @@ toggle.addEventListener("click", function()
 menu.classList.toggle("active");
 });
 }
+
 
 
