@@ -133,37 +133,7 @@ border-radius:6px;
 }
 
 
-/* FLOATING BUTTONS */
 
-.whatsapp-float
-{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:1000;
-}
-
-.inquiry-float
-{
-position:fixed;
-right:20px;
-bottom:80px;
-background:#1E40AF;
-color:white;
-padding:12px 18px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:1000;
-}
 
 </style>
 
@@ -300,19 +270,8 @@ height="400">
 <div id="footer"></div>
 
 
-
-<a href="https://wa.me/918084243031" class="whatsapp-float">
-
-<i class="fa-brands fa-whatsapp"></i> WhatsApp
-
-</a>
-
-
-<a href="inquiry.html" class="inquiry-float">
-
-<i class="fa-solid fa-file-lines"></i> Inquiry
-
-</a>
+<!-- NEW FLOATING BUTTONS CONTAINER -->
+<div id="floating-buttons"></div>
 
 
 
@@ -338,3 +297,4 @@ document.body.style.backgroundPosition = `${x*40}px ${y*40}px`
 </body>
 
 </html>
+
