@@ -54,19 +54,28 @@ border-radius:6px;
 margin-bottom:30px;
 }
 
+.card
+{
+cursor:pointer;
+transition:0.3s;
+}
 
+.card:hover
+{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
 /* ADMISSION BANNER */
 
 .ad-banner
 {
-width:25%;
-height:50%
-image-alignment:centre;
+width:100%;
+max-width:400px;
+display:block;
+margin:auto;
 border-radius:6px;
 margin-bottom:30px;
 }
-
-
 /* GRID */
 
 .grid
@@ -211,7 +220,7 @@ background:#facc15;
 
 <div class="grid">
 
-<a href="https://maps.app.goo.gl/57JbzsYH6jLvVf9b9" target="_blank" class="card"> <i class="fa-solid fa-school"></i> <h3>Visit School</h3> <p>Visit Apex Public School office for enquiry</p> </a>
+<a href="https://maps.app.goo.gl/57JbzsYH6jLvVf9b9" target="_blank" class="card"> <i class="fa-solid fa-school"></i> <h3>Visit School</h3> <p>Visit Apex Public School office for enquiry<br>Open location in Google Maps</p></a>
 
 </div>
 
@@ -379,7 +388,7 @@ background:#facc15;
 
 </div>
 
-</div>
+
 
 </section>
 <section class="cta">
@@ -389,10 +398,6 @@ background:#facc15;
 <p>Join Apex Public School for quality education</p>
 
 <button onclick="location.href='contact.html'">Admission Inquiry</button>
-
-</section>
-
-</div>
 
 </section>
 
@@ -414,12 +419,18 @@ q.addEventListener("click", () => {
 
 let ans = q.nextElementSibling
 
-ans.style.display = ans.style.display === "block" ? "none" : "block"
+if(ans.style.display === "block")
+{
+ans.style.display = "none"
+}
+else
+{
+ans.style.display = "block"
+}
 
 })
 
 })
-
 /* MOUSE PARALLAX BACKGROUND */
 
 document.addEventListener("mousemove", e => {
@@ -437,6 +448,7 @@ document.body.style.backgroundPosition = `${x*40}px ${y*40}px`
 </body>
 
 </html>
+
 
 
 
