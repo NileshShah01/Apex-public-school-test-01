@@ -689,7 +689,15 @@ visibility:hidden;
 transition:0.3s;
 z-index:900;
 }
-
+.menu
+{
+transition:left 0.35s ease;
+}
+.menu a.active
+{
+color:#2563EB;
+font-weight:700;
+}
 .menu
 {
 display:flex;
@@ -1292,6 +1300,7 @@ background:#2563EB;
 {
 transition:0.35s;
 }
+
 
 
 
