@@ -1313,6 +1313,10 @@ color:#555;
 {
 background:#2563EB;
 }
+.gallery-card
+{
+transition:0.35s;
+}
 
 
 
