@@ -5,7 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex Public School | Anjani Bazar</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .cta
+{
+text-align:center;
+padding:50px 20px;
+background:#1E40AF;
+color:white;
+}
+
+.cta button
+{
+padding:12px 22px;
+background:white;
+border:none;
+cursor:pointer;
+border-radius:4px;
+font-weight:bold;
+margin-top:15px;
+}
+
+.cta button:hover
+{
+background:#facc15;
+}
+
+    </style>
 </head>
+    
 <body>
 
 <div id="header"></div>
@@ -14,7 +41,7 @@
 <section class="homepage-hero">
     <div class="slider">
         <img src="images/School-Building.jpeg" class="slide active">
-        <img src="images/Bihar-Museum-img1.jpeg" class="slide">
+        <img src="images/Bihar-Museum-img4.jpeg" class="slide">
         <img src="images/Science-centre-Patna-img1.jpeg" class="slide">
         <img src="images/Republic-Day-img1.jpeg" class="slide">
     </div>
@@ -33,10 +60,10 @@
 
 <!-- 3. QUICK STATS -->
 <section class="stats-bar reveal">
-    <div class="stat"><h3 class="counter" data-target="300">0</h3><span>Students</span></div>
-    <div class="stat"><h3 class="counter" data-target="15">0</h3><span>Teachers</span></div>
-    <div class="stat"><h3 class="counter" data-target="12">0</h3><span>Classrooms</span></div>
-    <div class="stat"><h3 class="counter" data-target="8">0</h3><span>Years</span></div>
+    <div class="stat"><h3 class="counter" data-target="300+">0</h3><span>Students</span></div>
+    <div class="stat"><h3 class="counter" data-target="15+">0</h3><span>Teachers</span></div>
+    <div class="stat"><h3 class="counter" data-target="12+">0</h3><span>Classrooms</span></div>
+    <div class="stat"><h3 class="counter" data-target="8+">0</h3><span>Years</span></div>
 </section>
 
 <!-- 4. PRINCIPAL MESSAGE -->
@@ -59,8 +86,9 @@
         <div class="facility-slide"><img src="images/Sports-Event-Prize-Distribution-img1.jpeg"><div class="facility-name">Playground</div></div>
     </div>
 </section>
-
-<!-- 6. GALLERY PREVIEW -->
+<section class="facilities-preview"> <h2>Our Facilities</h2> <div class="facilities-grid"> <div class="facility-item"> <i class="fas fa-tv"></i> <h3>Smart Classrooms</h3> <p>Digital learning tools improve understanding.</p> </div> <div class="facility-item"> <i class="fas fa-desktop"></i> <h3>Computer Lab</h3> <p>Students learn computer and digital skills.</p> </div> <div class="facility-item"> <i class="fas fa-book"></i> <h3>Library</h3> <p>Books and study materials for learning.</p> </div> <div class="facility-item"> <i class="fas fa-futbol"></i> <h3>Sports Ground</h3> <p>Outdoor games build fitness and teamwork.</p> </div> <div class="facility-item"> <i class="fas fa-video"></i> <h3>CCTV Security</h3> <p>Full campus monitoring for student safety.</p> </div> <div class="facility-item"> <i class="fas fa-bus"></i> <h3>Transport</h3> <p>Safe school transport for students.</p> </div> </div> <div class="facility-button"> <a href="facilities.html">View All Facilities</a> </div> </section>
+<section class="activities-section"> <h2>Student Activities</h2> <p class="activity-intro">Students participate in sports, cultural programs and educational trips to build confidence and skills.</p> <div class="activities-grid"> <div class="activity-card"> <img src="images/Sports-Event-Prize-Distribution-img1.jpeg" loading="lazy" alt="Sports Competition"> <h3>Sports Events</h3> <p>Students take part in outdoor games and annual sports competitions.</p> </div> <div class="activity-card"> <img src="images/Republic-Day-img1.jpeg" loading="lazy" alt="Republic Day Celebration"> <h3>Cultural Programs</h3> <p>School celebrates national festivals and cultural events with students.</p> </div> <div class="activity-card"> <img src="images/Science-centre-Patna-img3.jpeg" loading="lazy" alt="Science Centre Visit"> <h3>Educational Trips</h3> <p>Students visit museums and science centres for practical learning.</p> </div> <div class="activity-card"> <img src="images/Bihar-Museum-img1.jpeg" loading="lazy" alt="Bihar Museum Visit"> <h3>Learning Visits</h3> <p>Trips help students understand history, science and culture.</p> </div> </div> </section>
+    <!-- 6. GALLERY PREVIEW -->
 <section class="home-gallery reveal">
     <h2>School Memories</h2>
     <div class="gallery-grid">
@@ -68,6 +96,9 @@
         <img src="images/Science-centre-Patna-img3.jpeg" onclick="openLightbox(this)">
         <img src="images/Republic-Day-img1.jpeg" onclick="openLightbox(this)">
         <img src="images/Sports-Event-Prize-Distribution-img1.jpeg" onclick="openLightbox(this)">
+        <img src="images/Bihar-Museum-img4.jpeg" onclick="openLightbox(this)">
+        <img src="images/Bihar-Museum-img7.jpeg" onclick="openLightbox(this)">
+
     </div>
     <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
 </section>
@@ -78,6 +109,15 @@
     <div class="testimonial-slider">
         <div class="testimonial active">"Best school in Parsa for discipline and quality education."</div>
         <div class="testimonial">"My child loves the teachers and modern facilities."</div>
+<section class="cta">
+
+<h2>Admission Open 2026 to 2027</h2>
+
+<p>Join Apex Public School for quality education</p>
+
+<button onclick="location.href='contact.html'">Admission Inquiry</button>
+
+</section>
     </div>
 </section>
 
@@ -89,6 +129,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
