@@ -227,6 +227,13 @@ padding:25px 10px;
 flex-wrap:wrap;
 border-bottom:1px solid #eee;
 }
+.facility-stats
+{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
 
 .stat
 {
@@ -1025,4 +1032,14 @@ display:flex;
     line-height: 1.6;
 }
 
+.facility-card i
+{
+color:#1E40AF;
+margin-bottom:12px;
+}
+
+.facility-card h3
+{
+margin-bottom:6px;
+}
 
