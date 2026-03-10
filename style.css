@@ -1323,4 +1323,12 @@ box-shadow:0 10px 20px rgba(0,0,0,0.15);
 }
 
 
+@media(max-width:768px)
+{
+.ad-banner
+{
+width:100%;
+max-width:300px;
+}
+}
 
