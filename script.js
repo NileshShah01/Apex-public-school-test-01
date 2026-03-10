@@ -190,35 +190,4 @@ header.style.boxShadow = "0 2px 8px rgba(0,0,0,0.08)";
 
 });
 
-/* MOBILE MENU */
-
-
-const toggle = document.getElementById("menuToggle");
-const menu = document.getElementById("menu");
-const overlay = document.getElementById("menuOverlay");
-
-if(toggle)
-{
-toggle.addEventListener("click", function()
-{
-menu.classList.toggle("active");
-overlay.classList.toggle("active");
-});
-}
-
-if(overlay)
-{
-overlay.addEventListener("click", function()
-{
-menu.classList.remove("active");
-overlay.classList.remove("active");
-});
-}
-
-
-
-
-
-
-
 
