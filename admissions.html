@@ -188,7 +188,33 @@ margin-top:15px;
 {
 background:#facc15;
 }
+.ad-banner-row
+{
+display:flex;
+gap:20px;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+}
 
+.ad-banner
+{
+width:100%;
+max-width:350px;
+border-radius:6px;
+}
+@media(max-width:768px)
+{
+.ad-banner-row
+{
+flex-direction:column;
+}
+
+.ad-banner
+{
+max-width:300px;
+}
+}
 
 </style>
 
@@ -207,12 +233,7 @@ background:#facc15;
 </section>
 
 
-<section class="section">
-
-<img src="images/Admission Banner 1.png" class="ad-banner">
-<img src="images/Admission Banner.png" class="ad-banner">
-</section>
-
+<section class="section"> <div class="ad-banner-row"> <img src="images/Admission Banner 1.png" class="ad-banner"> <img src="images/Admission Banner.png" class="ad-banner"> </div> </section>
 
 <section class="section">
 
@@ -448,6 +469,7 @@ document.body.style.backgroundPosition = `${x*40}px ${y*40}px`
 </body>
 
 </html>
+
 
 
 
