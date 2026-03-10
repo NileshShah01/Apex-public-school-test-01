@@ -23,23 +23,19 @@ const toggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 const overlay = document.getElementById("menuOverlay");
 
-if(toggle)
-{
-toggle.addEventListener("click", function()
+if(!toggle || !menu) return;
+
+toggle.onclick = function()
 {
 menu.classList.toggle("active");
 overlay.classList.toggle("active");
-});
-}
+};
 
-if(overlay)
-{
-overlay.addEventListener("click", function()
+overlay.onclick = function()
 {
 menu.classList.remove("active");
 overlay.classList.remove("active");
-});
-}
+};
 }
 /* HERO SLIDER */
 
@@ -218,6 +214,7 @@ menu.classList.remove("active");
 overlay.classList.remove("active");
 });
 }
+
 
 
 
