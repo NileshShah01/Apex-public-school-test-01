@@ -1301,8 +1301,26 @@ background:#2563EB;
 transition:0.35s;
 }
 
+//#Admission Form//Direct Links on clicking the Boxes
 
+.admission-card
+{
+display:block;
+text-decoration:none;
+color:inherit;
+background:#f8fafc;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+text-align:center;
+}
 
+.admission-card:hover
+{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
 
 
 
