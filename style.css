@@ -373,7 +373,32 @@ text-decoration:none;
 font-weight:bold;
 box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
+.whatsapp-float:hover {
+    background: #2563EB;
+    transform: scale(1.05);
+}
+/* INQUIRY FLOATING BUTTON */
+.inquiry-float {
+    position: fixed;
+    right: 20px;
+    bottom: 85px;
+    background: #1E40AF;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.inquiry-float:hover {
+    background: #2563EB;
+    transform: scale(1.05);
+}
 
 /* LIGHTBOX */
 
@@ -999,4 +1024,5 @@ display:flex;
     color: #333;
     line-height: 1.6;
 }
+
 
