@@ -5,11 +5,42 @@ fetch(file)
 .then(data =>
 {
 document.getElementById(id).innerHTML = data;
+
+if(id === "header")
+{
+initMenu();
+}
 });
 }
 
 loadComponent("header","header.html");
 loadComponent("footer","footer.html");
+loadComponent("floating-button","floating-button.html");
+
+function initMenu()
+{
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("menuOverlay");
+
+if(toggle)
+{
+toggle.addEventListener("click", function()
+{
+menu.classList.toggle("active");
+overlay.classList.toggle("active");
+});
+}
+
+if(overlay)
+{
+overlay.addEventListener("click", function()
+{
+menu.classList.remove("active");
+overlay.classList.remove("active");
+});
+}
+}
 /* HERO SLIDER */
 
 let slides = document.querySelectorAll(".slide");
@@ -187,8 +218,7 @@ menu.classList.remove("active");
 overlay.classList.remove("active");
 });
 }
-/* FLOATING BUTTONS LOADER */
-loadComponent("floating-button", "floating-button.html");
+
 
 
 
