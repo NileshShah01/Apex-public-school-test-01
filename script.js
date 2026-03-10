@@ -87,8 +87,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll(".stats, .stat-section").forEach(section => {
-  observer.observe(section);
+document.querySelectorAll(".stats, .stat-section, .facility-stats").forEach(section => {  observer.observe(section);
 });
 
 
@@ -181,6 +180,7 @@ menu.classList.toggle("active");
 
 /* FLOATING BUTTONS LOADER */
 loadComponent("floating-button", "floating-button.html");
+
 
 
 
