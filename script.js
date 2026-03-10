@@ -51,36 +51,44 @@ setInterval(nextSlide,3000);
 
 
 
-/* COUNTER ANIMATION */
-
+/* COUNTER ANIMATION – FIXED VERSION */
 const counters = document.querySelectorAll(".counter");
 
-counters.forEach(counter =>
-{
-counter.innerText = "0";
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      counters.forEach(counter => {
+        counter.innerText = "0"; // reset if needed
+        const target = parseInt(counter.getAttribute("data-target")) || 0;
+        if (target === 0) {
+          counter.innerText = "0";
+          return;
+        }
 
-const updateCounter = () =>
-{
+        let count = 0;
+        const duration = 1800; // total animation time in ms
+        const stepTime = 20;   // update every 20ms
+        const increment = target / (duration / stepTime);
 
-const target = +counter.getAttribute("data-target");
-const count = +counter.innerText;
+        const update = () => {
+          count += increment;
+          counter.innerText = Math.ceil(count);
+          if (count < target) {
+            setTimeout(update, stepTime);
+          } else {
+            counter.innerText = target;
+          }
+        };
 
-const increment = target / 80;
+        update();
+      });
+      observer.unobserve(entry.target); // run only once
+    }
+  });
+}, { threshold: 0.1 });
 
-if(count < target)
-{
-counter.innerText = Math.ceil(count + increment);
-setTimeout(updateCounter,20);
-}
-else
-{
-counter.innerText = target;
-}
-
-};
-
-updateCounter();
-
+document.querySelectorAll(".stats, .stat-section").forEach(section => {
+  observer.observe(section);
 });
 
 
@@ -173,6 +181,7 @@ menu.classList.toggle("active");
 
 /* FLOATING BUTTONS LOADER */
 loadComponent("floating-button", "floating-button.html");
+
 
 
 
