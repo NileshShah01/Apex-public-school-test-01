@@ -10,7 +10,7 @@ document.getElementById(id).innerHTML = data;
 
 loadComponent("header","header.html");
 loadComponent("footer","footer.html");
-loadComponent("floating-buttons", "floating-button.html");
+loadComponent("floating-button", "floating-button.html");
 /* HERO SLIDER */
 
 let slides = document.querySelectorAll(".slide");
@@ -171,6 +171,7 @@ toggle.addEventListener("click", function()
 menu.classList.toggle("active");
 });
 }
+
 
 
 
