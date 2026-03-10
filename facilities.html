@@ -30,7 +30,7 @@ color:#1E40AF;
 
 .facility-hero
 {
-background:linear-gradient(rgba(10,42,102,0.7.5),rgba(30,77,183,0.75)),url("images/Facilities-Slide-img1.jpeg");
+background:linear-gradient(rgba(10,42,102,0.75),rgba(30,77,183,0.75)),url("images/Facilities-Slide-img1.jpeg");
 background-size:cover;
 background-position:center;
 color:white;
@@ -57,6 +57,7 @@ padding:30px 0;
 {
 display:flex;
 gap:20px;
+width:max-content;
 animation:slide 30s linear infinite;
 }
 
@@ -67,6 +68,7 @@ height:200px;
 object-fit:cover;
 border-radius:6px;
 box-shadow:0 5px 12px rgba(0,0,0,0.2);
+flex-shrink:0;
 }
 
 @keyframes slide
@@ -211,7 +213,7 @@ background:#ddd;
 <p>Modern infrastructure for quality education</p>
 
 </section>
-
+<h2 style="text-align:center;margin:20px 0;color:#1E40AF"> Campus Life and Facilities </h2>
 
 <section class="slider-wrap">
 
@@ -309,7 +311,7 @@ background:#ddd;
 <section class="info">
 
 <h2>Safe and Secure Campus</h2>
-
+<i class="fas fa-shield-alt"></i>
 <p>
 Our school provides a safe environment with CCTV monitoring, clean drinking water and responsible supervision from teachers.
 </p>
@@ -320,7 +322,7 @@ Our school provides a safe environment with CCTV monitoring, clean drinking wate
 <section class="info">
 
 <h2>Learning Environment</h2>
-
+<i class="fas fa-graduation-cap"></i>
 <p>
 Modern teaching methods with smart classrooms help students understand concepts clearly and develop strong academic skills.
 </p>
@@ -331,7 +333,7 @@ Modern teaching methods with smart classrooms help students understand concepts 
 <section class="info">
 
 <h2>Sports and Activities</h2>
-
+<i class="fas fa-running"></i>
 <p>
 Students participate in sports, cultural activities, educational trips and events to develop physical fitness and confidence.
 </p>
@@ -398,6 +400,7 @@ document.querySelector(".facility-stats")?.forEach(el => observer.observe(el));
 
 </body>
 </html>
+
 
 
 
