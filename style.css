@@ -628,7 +628,39 @@ padding:35px 15px;
 }
 
 }
+@media(max-width:768px)
+{
 
+.hero
+{
+height:300px;
+}
+
+.hero-content h2
+{
+font-size:26px;
+}
+
+.hero-content p
+{
+font-size:14px;
+}
+
+}
+@media(max-width:768px)
+{
+
+.stats-bar
+{
+gap:25px;
+}
+
+.stat h3
+{
+font-size:24px;
+}
+
+}
 /* MOBILE MENU */
 
 .menu-toggle
@@ -1255,4 +1287,5 @@ font-size:18px;
 font-size:14px;
 color:#555;
 }
+
 
