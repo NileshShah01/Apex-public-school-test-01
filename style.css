@@ -1046,4 +1046,79 @@ margin-bottom:6px;
 {
 animation-play-state:paused;
 }
+.facilities-preview
+{
+padding:60px 20px;
+background:#f8fafc;
+text-align:center;
+}
+
+.facilities-preview h2
+{
+color:#1E40AF;
+margin-bottom:35px;
+font-size:32px;
+}
+
+.facilities-grid
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.facility-item
+{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.facility-item:hover
+{
+transform:translateY(-8px);
+}
+
+.facility-item i
+{
+font-size:32px;
+color:#1E40AF;
+margin-bottom:10px;
+}
+
+.facility-item h3
+{
+margin-bottom:6px;
+font-size:18px;
+}
+
+.facility-item p
+{
+font-size:14px;
+color:#555;
+}
+
+.facility-button
+{
+margin-top:35px;
+}
+
+.facility-button a
+{
+background:#1E40AF;
+color:white;
+padding:12px 22px;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+}
+
+.facility-button a:hover
+{
+background:#2563EB;
+}
 
