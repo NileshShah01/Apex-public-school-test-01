@@ -22,7 +22,24 @@ function initMenu()
 const toggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 const overlay = document.getElementById("menuOverlay");
+touchStartX = 0
+touchEndX = 0
 
+menu.addEventListener("touchstart", function(e)
+{
+touchStartX = e.changedTouches[0].screenX
+})
+
+menu.addEventListener("touchend", function(e)
+{
+touchEndX = e.changedTouches[0].screenX
+
+if(touchStartX - touchEndX > 70)
+{
+menu.classList.remove("active")
+overlay.classList.remove("active")
+}
+})
 if(!toggle || !menu) return;
 
 toggle.onclick = function()
@@ -75,8 +92,15 @@ showSlide(currentSlide);
 /* AUTO SLIDER */
 
 setInterval(nextSlide,3000);
-
-
+.menu
+{
+transition:left 0.35s ease;
+}
+.menu a.active
+{
+color:#2563EB;
+font-weight:700;
+}
 
 /* COUNTER ANIMATION – FIXED VERSION */
 const counters = document.querySelectorAll(".counter");
@@ -189,5 +213,6 @@ header.style.boxShadow = "0 2px 8px rgba(0,0,0,0.08)";
 }
 
 });
+
 
 
