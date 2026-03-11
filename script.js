@@ -16,14 +16,13 @@ initMenu();
 loadComponent("header","header.html");
 loadComponent("footer","footer.html");
 loadComponent("floating-button","floating-button.html");
-
 function initMenu()
 {
 const toggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 const overlay = document.getElementById("menuOverlay");
 
-if(!toggle || !menu || !overlay) return;
+if(!toggle || !menu) return;
 
 toggle.onclick = function()
 {
@@ -213,6 +212,7 @@ item.classList.add("active")
 window.addEventListener("scroll", revealTimeline)
 
 revealTimeline()
+
 
 
 
