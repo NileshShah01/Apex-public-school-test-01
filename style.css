@@ -1425,5 +1425,44 @@ transform:scale(1.08);
 }
 
 
+/* AUTO SLIDER */
+.facilities-slider.reveal
+{
+overflow:hidden;
+padding:30px 10px;
+width:100%;
+}
+
+.slider-track
+{
+display:flex;
+gap:15px;
+width:max-content;
+animation:slide 35s linear infinite;
+}
+
+.slider-track img
+{
+width:260px;
+height:180px;
+object-fit:cover;
+border-radius:6px;
+flex-shrink:0;
+}
+
+
+@keyframes slide
+{
+0%
+{
+transform:translateX(0);
+}
+
+100%
+{
+transform:translateX(-50%);
+}
+}
+
 
 
