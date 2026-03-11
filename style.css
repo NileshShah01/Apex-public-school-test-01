@@ -718,8 +718,8 @@ font-weight:700;
 {
 display:flex;
 gap:22px;
+z-index:1001;
 }
-
 @media (max-width:768px)
 {
 
@@ -734,20 +734,19 @@ z-index:1001;
 
 .menu
 {
+display:flex;
 position:fixed;
 top:0;
-left:-60%;
-width:50%;
-height:80vh;
+left:-260px;
+width:260px;
+height:75vh;
 background:#eaf2ff;
 flex-direction:column;
 padding-top:80px;
 box-shadow:4px 0 15px rgba(0,0,0,0.15);
 transition:0.35s;
 z-index:1000;
-border-radius:0 12px 12px 0;
 }
-
 .menu a
 {
 padding:16px 20px;
@@ -1461,4 +1460,5 @@ transition:0.35s;
 {
 transform:scale(1.08);
 }
+
 
