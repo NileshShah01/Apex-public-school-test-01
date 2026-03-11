@@ -9,7 +9,7 @@ html
 scroll-behavior:smooth;
 }
 
-Improve button appearance globally.
+
 
 button
 {
@@ -35,11 +35,7 @@ color:#222;
 line-height:1.6;
 }
 
-
-/* HEADER */
-
-/* HEADER */
-
+/*Header/
 .site-header
 {
 background:white;
@@ -57,9 +53,8 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:10px 15px;
+position:relative;
 }
-
-/* LOGO AREA */
 
 .logo-section
 {
@@ -71,16 +66,13 @@ gap:12px;
 .logo
 {
 width:55px;
-height:55px;
+height:55px:
 object-fit:contain;
 }
-
-/* SCHOOL TEXT */
 
 .school-info h1
 {
 font-size:24px;
-margin:0;
 color:#1E40AF;
 }
 
@@ -88,7 +80,6 @@ color:#1E40AF;
 {
 font-size:13px;
 display:block;
-margin:2px 0;
 color:#333;
 }
 
@@ -98,14 +89,12 @@ font-size:11px;
 color:#666;
 }
 
-/* MENU */
-
 .menu
 {
 display:flex;
 gap:22px;
-z-index:1001;
 }
+
 .menu a
 {
 text-decoration:none;
@@ -114,8 +103,6 @@ font-weight:500;
 font-size:15px;
 position:relative;
 }
-
-/* HOVER ANIMATION */
 
 .menu a::after
 {
@@ -132,6 +119,20 @@ transition:0.3s;
 .menu a:hover::after
 {
 width:100%;
+}
+
+.menu a.active
+{
+font-weight:700;
+color:#2563EB;
+}
+
+.menu-toggle
+{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:#1E40AF;
 }
 
 /* ACTIVE PAGE */
@@ -684,13 +685,53 @@ font-size:24px;
 }
 
 }
+
+@media(max-width:768px)
+{
+
 .menu-toggle
 {
-display:none;
-font-size:26px;
-cursor:pointer;
-color:#1E40AF;
+display:block;
 }
+
+.menu
+{
+position:fixed;
+top:0;
+left:-260px;
+width:260px;
+height:100vh;
+background:#eaf2ff;
+flex-direction:column;
+padding-top:90px;
+transition:0.35s;
+box-shadow:4px 0 15px rgba(0,0,0,0.2);
+z-index:1000;
+}
+
+.menu a
+{
+padding:16px 20px;
+border-bottom:1px solid rgba(0,0,0,0.08);
+font-size:16px;
+font-weight:600;
+color:#0a2a66;
+}
+
+.menu a:hover
+{
+background:#2563EB;
+color:white;
+}
+
+.menu.active
+{
+left:0;
+}
+
+}
+
+Overlay system.
 
 #menuOverlay
 {
@@ -705,76 +746,11 @@ visibility:hidden;
 transition:0.3s;
 z-index:900;
 }
-.menu
-{
-transition:left 0.35s ease;
-}
-.menu a.active
-{
-color:#2563EB;
-font-weight:700;
-}
-.menu
-{
-display:flex;
-gap:22px;
-z-index:1001;
-}
-@media (max-width:768px)
-{
-
-.menu-toggle
-{
-display:block;
-position:absolute;
-right:20px;
-top:28px;
-z-index:1001;
-}
-
-.menu
-{
-display:flex;
-position:fixed;
-top:0;
-left:-260px;
-width:260px;
-height:75vh;
-background:#eaf2ff;
-flex-direction:column;
-padding-top:80px;
-box-shadow:4px 0 15px rgba(0,0,0,0.15);
-transition:0.35s;
-z-index:1000;
-}
-.menu a
-{
-padding:16px 20px;
-border-bottom:1px solid rgba(0,0,0,0.08);
-font-size:16px;
-color:#0a2a66;
-font-weight:600;
-transition:0.2s;
-}
-
-.menu a:hover
-{
-background:#2563EB;
-color:white;
-padding-left:26px;
-}
-
-.menu.active
-{
-left:0;
-}
 
 #menuOverlay.active
 {
 opacity:1;
 visibility:visible;
-}
-
 }
 /* FOOTER MAP */
 .footer-map {
@@ -1460,5 +1436,6 @@ transition:0.35s;
 {
 transform:scale(1.08);
 }
+
 
 
