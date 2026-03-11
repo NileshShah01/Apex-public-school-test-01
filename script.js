@@ -188,7 +188,30 @@ header.style.boxShadow = "0 2px 8px rgba(0,0,0,0.08)";
 }
 
 });
+//#about Page Timeline Funtion//
 
+function revealTimeline()
+{
 
+let items = document.querySelectorAll(".timeline-item")
+
+items.forEach(item => {
+
+let windowHeight = window.innerHeight
+let elementTop = item.getBoundingClientRect().top
+let visible = 100
+
+if(elementTop < windowHeight - visible)
+{
+item.classList.add("active")
+}
+
+})
+
+}
+
+window.addEventListener("scroll", revealTimeline)
+
+revealTimeline()
 
 
