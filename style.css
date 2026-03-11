@@ -4,6 +4,22 @@ html, body
 width:100%;
 overflow-x:hidden;
 }
+html
+{
+scroll-behavior:smooth;
+}
+
+Improve button appearance globally.
+
+button
+{
+transition:0.25s;
+}
+
+button:hover
+{
+transform:scale(1.05);
+}
 *
 {
 margin:0;
@@ -1411,4 +1427,37 @@ box-shadow:0 0 0 0 rgba(30,64,175,0);
 {
 margin-bottom:12px;
 line-height:1.7;
+}
+.section
+{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(8px);
+border-radius:10px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+margin-bottom:30px;
+}
+.card
+{
+transition:0.35s;
+}
+
+.card:hover
+{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 14px 28px rgba(0,0,0,0.25);
+}
+
+Improve gallery hover effect.
+
+.gallery-grid img
+{
+transition:0.35s;
+}
+
+.gallery-grid img:hover
+{
+transform:scale(1.08);
 }
