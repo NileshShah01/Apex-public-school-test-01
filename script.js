@@ -1,4 +1,4 @@
-function loadComponent(id, file)
+function loadComponent(id,file)
 {
 fetch(file)
 .then(response => response.text())
@@ -25,17 +25,17 @@ const overlay = document.getElementById("menuOverlay");
 
 if(!toggle || !menu || !overlay) return;
 
-toggle.addEventListener("click", function()
+toggle.onclick = function()
 {
 menu.classList.toggle("active");
 overlay.classList.toggle("active");
-});
+};
 
-overlay.addEventListener("click", function()
+overlay.onclick = function()
 {
 menu.classList.remove("active");
 overlay.classList.remove("active");
-});
+};
 }
 /* HERO SLIDER */
 
@@ -213,5 +213,6 @@ item.classList.add("active")
 window.addEventListener("scroll", revealTimeline)
 
 revealTimeline()
+
 
 
